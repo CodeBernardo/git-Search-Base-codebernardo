@@ -1,3 +1,5 @@
+
+
 export const fetchUserData = async (userName) => {
   const userData = await fetch(`https://api.github.com/users/${userName}`, {
     method: "GET",
@@ -6,7 +8,7 @@ export const fetchUserData = async (userName) => {
       if (res.ok) {
         return res.json();
       } else {
-        window.location.replace("./src/pages/error.html");
+        window.location.replace("./src/pages/error.html")
       }
     })
   return userData;
@@ -22,7 +24,7 @@ export const fetchUserRepos = async (userName) => {
       if (res.ok) {
         return res.json();
       } else {
-        window.location.replace("./src/pages/error.html");
+        window.location.replace("./src/pages/error.html")
       }
     })
   return userRepos;
