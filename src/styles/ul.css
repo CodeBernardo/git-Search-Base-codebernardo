@@ -41,6 +41,10 @@
   -webkit-box-orient: vertical;
 }
 
+.no-description {
+  color:  rgba(104, 104, 104, 0.671) !important;
+}
+
 @media (min-width: 768px) {
   .profile__ul {
     align-items: flex-start;
